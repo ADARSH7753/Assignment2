@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: true}))
 // --------------------------------------------------------------------------------
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(path.resolve(), "/public", "restraunt.html"))
+    res.sendFile(path.join(path.resolve(), "index.html"))
 })
 
 // --------------------------------------------------------------------------------
