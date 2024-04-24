@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="form-container">
+
+    <h1 id="log-head">Signup</h1>
+
+    <form action="/signup" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="user_name" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <h4 id="error"><%= locals.errorMessage %></h4>
+        <div id="btn-cont">    
+            <button type="submit" class="btn2">Sign up</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
